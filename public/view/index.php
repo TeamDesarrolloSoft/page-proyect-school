@@ -10,18 +10,25 @@ include_once './public/include/html_head.php';
 
 <body>
 
-    <h1>Seccion index - hecho x diego:v</h1>
+    <h1>Seccion Roles</h1>
+    <hr>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Des_rol</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr class="" style="text-align: center;">
+                            <th scope="col">Id</th>
+                            <th scope="col">Des_rol</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
     <script>
@@ -33,7 +40,7 @@ include_once './public/include/html_head.php';
                 .then((res = []) => {
                     tableBody.innerHTML = res.map(element => {
                         return `
-                    <tr data-id="${element.ID_ROL}">
+                    <tr data-id="${element.ID_ROL}" style="text-align: center;">
                         <td>${element.ID_ROL}</td>
                         <td>${element.DES_ROL}</td>
                     </tr>
