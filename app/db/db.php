@@ -10,7 +10,7 @@ class Db
     {
         //Accedemos al atributo privado de conexion gracias a self y le asignamos
         //la conexion a la base de datos
-        self::$conexion = new PDO("sqlsrv:server=SEBAS_LAPTOP;database=BD_COLEGIO;","sebasData", "1234");
+        self::$conexion = new PDO("sqlsrv:server=;database=BD_COLEGIO;","sebasData", "1234");
     }
 
 
