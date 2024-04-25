@@ -29,7 +29,9 @@
      <!-- JS NUBE -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <!-- chatbot -->
+    <script src="https://kit.fontawesome.com/75c41b6d39.js" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     
     
     <!-- js local -->
