@@ -17,7 +17,6 @@ include_once './public/include/html_head.php';
 
         <h1>Inicio</h1>
         <hr>
-        <?php require_once("./public/view/chatbot.php");?>
     
     </main>
 

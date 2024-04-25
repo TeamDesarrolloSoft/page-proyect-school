@@ -10,3 +10,7 @@ require_once '../db/db.php';
 $data = isset($_GET['action']) ? $_GET['action'] : "No hay valores";
 
 
+if($data == 'add'){
+    echo json_encode($_POST);
+}
+

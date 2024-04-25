@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         // iniciar el código ajax
         $.ajax({
-            url: './app/trigger/chatbot.php',
+            url: '../app/trigger/chatbot.php',
             type: 'POST',
             data: 'text=' + $value,
             success: function (result) {
