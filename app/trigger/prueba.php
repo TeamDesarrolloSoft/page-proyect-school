@@ -10,6 +10,3 @@ require_once '../db/db.php';
 $data = isset($_GET['action']) ? $_GET['action'] : "No hay valores";
 
 
-if ($data == 'GET') {
-    echo json_encode(ControllerPrueba::getPrueba());
-}

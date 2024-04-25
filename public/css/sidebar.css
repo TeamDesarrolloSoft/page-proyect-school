@@ -163,6 +163,8 @@ el icono, el sidebar se achique"*/
     min-height: 25px;
 }
 
+
+
 /*Menu de navegacion*/
 .barra-lateral .navegacion{
     height: 100%;
@@ -171,6 +173,10 @@ el icono, el sidebar se achique"*/
     margin-top: 80px;
     margin-bottom: 50px;
     /* border: 2px solid black; */
+}
+
+.barra-lateral .navegacion ul{
+    padding-left: 2px;
 }
 
 /*lo de abajo: sirve para poder modificar el scroll*/
