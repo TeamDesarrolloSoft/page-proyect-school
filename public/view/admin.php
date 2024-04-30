@@ -7,6 +7,9 @@ $fileJS = ["admin"];
 require_once("./public/include/html_head.php");
 ?>
 
+<style>
+
+</style>
 <body>
 
     <div class="container">

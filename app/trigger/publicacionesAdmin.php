@@ -4,7 +4,6 @@
     require_once '../model/publicacionesAdmin.php';
 
     require_once '../db/db.php';
-    require_once '../../config/route_file.php';
 
 
 
@@ -17,7 +16,7 @@
         $fileTmpName = $file['tmp_name'];
     
         // Directorio donde se guardara los archivos
-        $uploadDirectory = 'C:\xampp\htdocs\page-proyect-school\app\uploads\\';
+        $uploadDirectory = 'C:\xampp\htdocs\crudRoles\app\uploads\\';
 
         // Mueve el archivo al directorio de destino
         $destination = $uploadDirectory . $fileName;
@@ -30,6 +29,12 @@
         }
 
         // echo json_encode(ControllerLogin::add());
-
+    }else if($action == "GET"){
+        echo json_encode(ControllerpublicacionesAdmin::mostrarPublicacionesAdmin());
+    }else if($action == "DELETE"){
+        echo json_encode(ControllerpublicacionesAdmin::eliminandoPublicacion());
     }
+
+
+
 

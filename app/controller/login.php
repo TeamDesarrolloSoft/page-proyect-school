@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 class ControllerLogin{
 
     public static function add(){
@@ -19,6 +21,10 @@ class ControllerLogin{
         return ModelLogin::identifyAdmin_Rol($values);
         
     }
+
+
+
+
 
 }
 

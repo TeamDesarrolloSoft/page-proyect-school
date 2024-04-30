@@ -1,0 +1,120 @@
+.contenedorPublicaciones{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorPublicaciones .contenedorHijoPubli{
+    width: 50%;
+    height: 90%;
+    background-color: #E5E5E5;
+    padding-top: 10px;
+}
+
+
+
+
+.contenedorPublicaciones .contCabeceraPubli{ /*10*/
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedorPublicaciones .contPubliImg{/*30*/
+    width: 100%;
+    height: 30%;
+}
+
+.contenedorPublicaciones .contTextPubli{/*40*/
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorPublicaciones .contFooterPubli{/*10*/
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Codificando*/
+
+.contenedorPublicaciones .contCabeceraPubli .imgPubliGa{
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.contenedorPublicaciones .contCabeceraPubli .imgPubliGa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.contenedorPublicaciones .contPubliImg .contPubliImgSpace{/*quitar el contPubliImgSpace
+    y poner la imagen, si es que sale todo bien dejalo*/
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.contenedorPublicaciones .contPubliImg .contPubliImgSpace img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contenedorPublicaciones .contTextPubli .contextPubliSpace{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.contenedorPublicaciones .contFooterPubli .contFooterPubliIconsData{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorPublicaciones .contFooterPubli .contFooterPubliIconsData .contFooterPubliIcons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorPublicaciones .contFooterPubli .contFooterPubliIconsData .contFooterPubliIcons ion-icon{
+    background-color: #E9EDC9;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.contenedorPublicaciones .contFooterPubli .contFooterPubliIconsData .contPublicarBotonxd {
+    display: flex;
+    align-items: center;
+}
+.contenedorPublicaciones .contFooterPubli .contFooterPubliIconsData .contPublicarBotonxd button{
+    background-color: #E9EDC9;
+    border: none;
+    padding: 15px 20px;
+}

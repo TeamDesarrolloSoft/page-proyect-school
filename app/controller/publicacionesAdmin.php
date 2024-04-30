@@ -21,4 +21,16 @@ class ControllerpublicacionesAdmin{
         // Llamar al método add del modelo
         return ModelpublicacionesAdmin::add($columns, $params, $values); 
     }
+
+
+
+    public static function mostrarPublicacionesAdmin(){
+        return ModelpublicacionesAdmin::mostrarPublicacionesAdmin();
+    }
+
+    public static function eliminandoPublicacion(){
+       $id = isset($_GET['id']) ? $_GET['id'] : null;
+       return ModelpublicacionesAdmin::eliminandoPublicacion($id);
+    }
+
 }
