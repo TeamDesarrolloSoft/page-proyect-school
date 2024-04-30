@@ -3,7 +3,7 @@
 
 <head>
 <?php
-$fileJS = [];
+$fileJS = ["sidebar"];
 $fileCSS = ["infoPefilSidebar", "sidebar"];
 
 require_once("./public/include/html_head.php");
@@ -71,10 +71,7 @@ require_once("./public/include/html_head.php");
 
 
 
-    <!-- JS NUBE -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../../js/sidebar.js"></script>
+
 
 
 

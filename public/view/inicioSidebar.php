@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$fileJS = [];
+$fileJS = ["sidebar"];
 $fileCSS = ["inicioSidebar", "sidebar"];
 
 require_once("./public/include/html_head.php");
