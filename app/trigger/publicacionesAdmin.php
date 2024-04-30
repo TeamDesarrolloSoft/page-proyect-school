@@ -16,7 +16,7 @@
         $fileTmpName = $file['tmp_name'];
     
         // Directorio donde se guardara los archivos
-        $uploadDirectory = 'C:\xampp\htdocs\crudRoles\app\uploads\\';
+        $uploadDirectory = 'C:\xampp\htdocs\page-proyect-school\app\uploads\\';
 
         // Mueve el archivo al directorio de destino
         $destination = $uploadDirectory . $fileName;
