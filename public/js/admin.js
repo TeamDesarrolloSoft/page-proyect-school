@@ -13,7 +13,7 @@ function obteniendoDatosYEnvioAdmin(user, pass){
     formDatos.append("usuario", user.value)
     formDatos.append("password", pass.value)
 
-    fetch("./app/trigger/login.php?action=verifyAdmin",{
+    fetch("../../app/trigger/login.php?action=verifyAdmin",{
         method: "POST",
         body: formDatos
     })

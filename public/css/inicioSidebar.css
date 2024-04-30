@@ -1,0 +1,148 @@
+
+
+/*INICIO*/
+
+.container {
+    width: auto;
+    height: auto;
+    background: rgb(255, 255, 255);
+}
+
+.container .content .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.icon-case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-case img {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la imagen */
+}
+
+.container .content .cards .box h1 {
+    margin-top: 100px;
+    margin-right: 8px;
+}
+.container .content .cards .icon-case img {
+    margin-right:100px;
+}
+.container .content .cards .icon-case span {
+    margin-bottom: 100px; /* Ajusta el margen inferior según sea necesario */
+    margin-right: 90px;
+}
+.container .content .cards .card {
+    width: 350px;
+    height: 200px;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.container .content .cards .card:nth-child(1) {
+    background-color: #e2f3ff;
+    /* Color de fondo para la primera carta */
+}
+
+.container .content .cards .card:nth-child(2) {
+    background-color: #ffedf8;
+    /* Color de fondo para la segunda carta */
+}
+
+.container .content .cards .card:nth-child(3) {
+    background-color: #e2f3ff;
+    /* Color de fondo para la tercera carta */
+}
+
+.container .content .cards .card:nth-child(4) {
+    background-color: #FEAF00;
+    /* Color de fondo para la cuarta carta */
+}
+
+.lema-container {
+    text-align: center;
+    font-size: 1.5em;
+    /* Ajusta el tamaño de fuente según sea necesario */
+    margin-top: 50px;
+    color: #083A50;
+}
+
+h2.video {
+    margin-top: 20px;
+    /* Ajusta el margen superior del encabezado "Videos" según sea necesario */
+    color: #083A50;
+
+}
+
+h2.info {
+    color: #083A50;
+
+}
+
+.conteiner-videos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.carrusel-videos {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.list-videos {
+    display: flex;
+    gap: 10px;
+    /* Espacio entre tarjetas */
+}
+
+.video-card {
+    flex: 0 0 auto;
+    width: auto;
+    /* Ajusta el ancho según tus necesidades */
+    scroll-snap-align: start;
+    background-color: #ffffff;
+}
+
+.video-card-1 .img-sn-1 {
+    width: auto;
+    background-color: #EDEDED;
+}
+
+.img_small {
+    height: auto;
+    overflow: hidden;
+}
+
+.img_small img {
+    width: 170vh;
+    height: auto;
+    display: block;
+}
+
+
+.reclamoss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h3.reclamos {
+    color: #083A50;
+    text-align: center;
+}

@@ -15,7 +15,7 @@ function obteniendoDatosYEnvio(user, pass, rol){
     formDatos.append("password", pass.value)
     formDatos.append("id_cargo", rol.value)
 
-    fetch("./app/trigger/login.php?action=verifyCreacionRoles",{
+    fetch("../../app/trigger/login.php?action=verifyCreacionRoles",{
         method: "POST",
         body: formDatos
     })

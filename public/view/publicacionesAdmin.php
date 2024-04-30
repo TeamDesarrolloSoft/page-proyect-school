@@ -5,7 +5,7 @@
 $fileCSS = ["publicacionesAdmin"];
 $fileJS = ["publicacionesAdmin"];
 
-require_once ("./public/include/html_head.php");
+require_once ("../includePublicacionesAdmin/html_head.php");
 ?>
 
 <body>
@@ -16,7 +16,6 @@ require_once ("./public/include/html_head.php");
         <div class="row">
             <div class="col-lg-10">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear publicacion</button>
-                <a href="http://localhost/crudRoles" class="btn btn-success" type="button">Volver</a>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">

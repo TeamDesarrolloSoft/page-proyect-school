@@ -2,11 +2,13 @@
 <html lang="en">
 <?php
 
+//AQUI PUEDES COLOCAR EL NOMBRE DE TU ARCHIVO CSS O JS, OJO SOLO EL NOMBRE DEL ARCHIVO
+//YA QUE EN "INCLUDEADMIN" AUTOMATICAMENTE TE CARGA ESOS ARCHIVOS
 $fileJS = ["admin"];
+$fileCSS = [];
 
-require_once("./public/include/html_head.php");
+require_once("../includeLogueoAdmin/html_head.php");
 ?>
-
 <style>
 
 </style>
@@ -27,7 +29,7 @@ require_once("./public/include/html_head.php");
                     </div>
 
                     <button type="submit" class="btn btn-primary">Enviar</button>
-                    <a href="http://localhost/crudRoles" class="btn btn-info">Volver</a>
+                    <a href="http://localhost/crudRoles/public/view/creacionUsersAdmins.php" class="btn btn-info">Volver</a>
                     
                 </form>
             </div>

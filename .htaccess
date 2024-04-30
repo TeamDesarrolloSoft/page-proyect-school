@@ -1,0 +1,6 @@
+Options -Indexes 
+
+
+# Redireccionamiento para páginas de error 404 y 403
+ErrorDocument 404 /page-proyect-school/data/error/404.html
+ErrorDocument 403 /page-proyect-school/data/error/403.html

@@ -2,24 +2,21 @@
 <html lang="en">
 <?php
 
-$fileCSS = ["publicacionesUser"];
-$fileJS = ["publicacionesUser"];
+$fileCSS = ["publicacionesUser", "sidebar"];
+$fileJS = ["publicacionesUser", "sidebar"];
 
 require_once ("./public/include/html_head.php");
 
 ?>
 
 <body>
+    <?php require_once("./public/view/sidebar.php");?>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="publicData">
+    <main>
+        <div class="publicData">
 
-                </div>
-            </div>
         </div>
-    </div>
+    </main>
 
 
 </body>

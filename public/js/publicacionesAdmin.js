@@ -25,7 +25,7 @@ function obteniendoDatosPublicacionesAdmin(nombrePublicacionAdmin, rolPublicacio
     formDatos.append("imgPublicacionAdmin", imgPublicacionAdmin);
     formDatos.append("descripcionPublicacionAdmin", descripcionPublicacionAdmin.value);
 
-    fetch('./app/trigger/publicacionesAdmin.php?action=add', {
+    fetch('../../app/trigger/publicacionesAdmin.php?action=add', {
         method: 'POST',
         body: formDatos
     })
@@ -40,7 +40,7 @@ function obteniendoDatosPublicacionesAdmin(nombrePublicacionAdmin, rolPublicacio
 }
 
 const consulta = async () => {
-    const datos = await fetch("./app/trigger/publicacionesAdmin.php?action=GET");
+    const datos = await fetch("../../app/trigger/publicacionesAdmin.php?action=GET");
     const result = await datos.json();
 
     result.forEach(element => {
@@ -51,7 +51,7 @@ const consulta = async () => {
         <div class="contenedorHijoPubli">
             <div class="contCabeceraPubli">
                 <div class="imgPubliGa">
-                    <img src="./public/img/person.png" alt="">
+                    <img src="../img/person.png" alt="">
                 </div>
                 <div class="contCabeceraDatos">
                     <h3>${element.nombrePublicacionAdmin}</h3> 
@@ -62,7 +62,7 @@ const consulta = async () => {
 
             <div class="contPubliImg">
                 <div class="contPubliImgSpace">
-                    <img src="./app/uploads/${element.imgPublicacionAdmin}">
+                    <img src="../../app/uploads/${element.imgPublicacionAdmin}">
                 </div>
             </div>
 
@@ -109,7 +109,7 @@ function eliminarPublicacion(element) {
             contenedor.remove();
             console.log("La publicación se eliminó, su ID es: " + id);
 
-            fetch(`./app/trigger/publicacionesAdmin.php?action=DELETE&id=${id}`)
+            fetch(`../../app/trigger/publicacionesAdmin.php?action=DELETE&id=${id}`)
                 .then(res => res.json())
                 .then(console.log)
                 .catch(err => console.log(err))
