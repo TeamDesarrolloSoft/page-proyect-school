@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <?php
-$fileJS = ["sidebar"];
+$fileJS = ["infoNoticiasSidebar", "sidebar"];
 $fileCSS = ["infoNoticiasSidebar", "sidebar"];
 
 require_once("./public/include/html_head.php");
