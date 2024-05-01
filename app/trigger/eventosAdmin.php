@@ -5,11 +5,7 @@
 
    require_once '../db/db.php';
 
-
-//echo json_encode(["metodo_post"=> $_POST,"metodo_file"=>$_FILES]);
-
 $action = isset($_GET['action']) ? $_GET['action'] : null;
-
 
 if($action == "add"){
     $file = $_FILES['imgEventoAdmin'];

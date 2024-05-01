@@ -2,10 +2,10 @@
 <html lang="en">
 <?php
 
-$fileCSS = ["eventosAdmin"];
-$fileJS = ["eventosAdmin"];
+$fileCSS = ["infoNoticiasSidebar"];
+$fileJS = ["infoNoticiasSidebar"];
 
-require_once ("../includePublicacionesAdmin/html_head.php");
+require_once ("../includeEventosAdmin/html_head.php");
 ?>
 
 <body>
@@ -76,8 +76,8 @@ require_once ("../includePublicacionesAdmin/html_head.php");
 
         <div class="row">
             <div class="col-lg-10 mx-auto">
-                <div class="publicData">
-                
+                <div class="public_eventos_data">
+
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./eventosUser.php">
+                    <a href="./eventosSidebar.php">
                         <ion-icon name="apps-outline"></ion-icon>
                         <span>Eventos</span>
                     </a>

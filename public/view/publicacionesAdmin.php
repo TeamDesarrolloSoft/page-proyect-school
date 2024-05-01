@@ -3,13 +3,13 @@
 <?php
 
 $fileCSS = ["publicacionesAdmin"];
-$fileJS = ["publicacionesAdmin","eventosAdmin"];
+$fileJS = ["publicacionesAdmin", "eventosAdmin"];
 
 
 
 
 
-require_once ("../includePublicacionesAdmin/html_head.php");
+require_once("../includePublicacionesAdmin/html_head.php");
 ?>
 
 <body>
@@ -22,14 +22,12 @@ require_once ("../includePublicacionesAdmin/html_head.php");
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear publicacion</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EventoAdminModal" data-bs-whatever="@mdo">Crear Evento</button>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">Completar para publicar</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             </div>
 
@@ -53,40 +51,36 @@ require_once ("../includePublicacionesAdmin/html_head.php");
                                     <div class="mb-3">
                                         <label for="tituloPubli" class="form-label">Titulo publicacion</label>
                                         <input type="text" class="form-control" name="tituloPublicacionAdmin" id="tituloPublicacionAdmin">
-                                    </div> 
+                                    </div>
 
                                     <div class="mb-3">
                                         <label for="imgPublicacionAdmin" class="form-label">Imagen publicacion</label>
-                                        <input type="file"  name="imgPublicacionAdmin" id="imgPublicacionAdmin" required>
+                                        <input type="file" name="imgPublicacionAdmin" id="imgPublicacionAdmin" required>
                                     </div>
-                                    
+
                                     <div class="form-floating mb-3">
                                         <textarea class="form-control" placeholder="descripcionPublicacionAdmin" name="descripcionPublicacionAdmin" id="descripcionPublicacionAdmin"></textarea>
                                         <label for="descripcion">Descripcion</label>
                                     </div>
 
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="submit" data-bs-dismiss="modal" id="cacca"
-                                            class="btn btn-primary">Publicar</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" data-bs-dismiss="modal" id="cacca" class="btn btn-primary">Publicar</button>
                                     </div>
                                 </form>
-                                
+
                             </div>
 
                         </div>
                     </div>
                 </div>
 
-                <div class="modal fade" id="EventoAdminModal" tabindex="-1" aria-labelledby="EventoAdminModal"
-                    aria-hidden="true">
+                <div class="modal fade" id="EventoAdminModal" tabindex="-1" aria-labelledby="EventoAdminModal" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="">Completar para publicar</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             </div>
 
@@ -104,18 +98,16 @@ require_once ("../includePublicacionesAdmin/html_head.php");
 
                                     <div class="mb-3">
                                         <label for="imgEventoAdmin" class="form-label">Imagen publicacion</label>
-                                        <input type="file"  name="imgEventoAdmin" id="imgEventoAdmin" required>
+                                        <input type="file" name="imgEventoAdmin" id="imgEventoAdmin" required>
                                     </div>
-                                    
+
 
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="submit" data-bs-dismiss="modal" id="cacca"
-                                            class="btn btn-primary">Publicar</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" data-bs-dismiss="modal" id="cacca" class="btn btn-primary">Publicar</button>
                                     </div>
                                 </form>
-                                
+
                             </div>
 
                         </div>
@@ -128,18 +120,20 @@ require_once ("../includePublicacionesAdmin/html_head.php");
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <div class="publicData">
-                
+
                 </div>
             </div>
- 
         </div>
+
         <div class="row">
             <div class="col-lg-10">
+                <div class="public_eventos_data">
 
-            
+                </div>
+
             </div>
         </div>
-    </div>  
+    </div>
 
 
 </body>
