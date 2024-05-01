@@ -5,12 +5,9 @@
 
     require_once '../db/db.php';
 
-
-
     $action = isset($_GET['action']) ? $_GET['action'] : null;
 
-
-    if($action == "add"){
+    if ($action == "add"){
         $file = $_FILES['imgPublicacionAdmin'];
         $fileName = $file['name'];
         $fileTmpName = $file['tmp_name'];
