@@ -3,7 +3,7 @@
 
 <head>
 <?php
-$fileJS = [];
+$fileJS = ["infoPefilSidebar", "sidebar"];
 $fileCSS = ["infoPefilSidebar", "sidebar"];
 
 require_once("./public/include/html_head.php");

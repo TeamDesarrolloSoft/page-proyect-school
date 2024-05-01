@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$fileJS = [];
+$fileJS = ["inicioSidebar", "sidebar"];
 $fileCSS = ["inicioSidebar", "sidebar"];
 
 require_once("./public/include/html_head.php");
@@ -22,21 +22,21 @@ require_once("./public/include/html_head.php");
                 <div class="cards">
 
                     <div class="card">
+                        
                         <div class="icon-case">
                             <img src="./public/img/EstudiantesDocentes.png" alt="estudiantes">
                             <span>Estudiantes</span>
-
                         </div>
                         <div class="box">
                             <h1>243</h1>
                         </div>
+
                     </div>
 
                     <div class="card">
                         <div class="icon-case">
                             <img src="./public/img/Cursos.png" alt="crusos">
                             <span>Cursos</span>
-
                         </div>
                         <div class="box">
                             <h1>23</h1>
@@ -48,7 +48,6 @@ require_once("./public/include/html_head.php");
                         <div class="icon-case">
                             <img src="./public/img/EstudiantesDocentes.png" alt="docente">
                             <span>Docentes</span>
-
                         </div>
                         <div class="box">
                             <h1>30</h1>
@@ -60,7 +59,6 @@ require_once("./public/include/html_head.php");
                         <div class="icon-case">
                             <img src="./public/img/Usuario.png" alt="usuario">
                             <span>Usuarios</span>
-
                         </div>
                         <div class="box">
                             <h1>273</h1>
