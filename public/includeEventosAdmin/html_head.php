@@ -7,7 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.:: Trabajo ::.</title>
+    <title>.:: Pepito Perez ::.</title>
+    <link rel="icon" href="./public/img/logos/icono.png" type="image/x-icon">
 
 
      <!-- Css de la nube, osea cdn: -->

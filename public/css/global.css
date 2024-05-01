@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- COLOR ---- */
+
+.bg-white { 
+    background-color: white;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-black-low{
+    background-color: #CBD5E1;
+}
+
+.bg-primary{
+    background-color: #1C74BB;
+}
+
+.bg-secondary{
+    background-color: #1E293B;
+}
+
+.c-white {
+    color: white;
+}
+
+.c-black {
+    color: black;
+}
+
+.c-black-low {
+    color: #CBD5E1;
+}
+
+.c-primary {
+    color: #1C74BB;
+}
+
+.c-secondary {
+    color: #1E293B;
+}
+
+/* ---- DIMESIONES  ---- */
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vw-100{
+    width: 100vw;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.h-66 {
+    height: 66%;
+}
+
+.h-60{
+    height: 60%;
+}
+
+.h-50{
+    height: 50%;
+}
+
+.h-40{
+    height: 40%;
+}
+
+.h-33 {
+    height: 33%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-66 {
+    width: 66%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-33 {
+    width: 33%;
+}
+/* ---- DISPLAYS ---- */
+
+.flex {
+    display: flex;
+}
+
+/* ---- FLEX ---- */
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.gap-5{
+    gap: 50px;
+}
+
+.gap-4{
+    gap: 40px;
+}
+.gap-3{
+    gap: 30px;
+}
+
+.gap-2{
+    gap: 20px;
+}
+
+.gap-1{
+    gap: 10px;
+}
+
+.gap-p1 {
+    gap: 1%;
+}
+
+/* ALIGN */
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+
+/* JUSTIFY */
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+/* PADDING */
+
+.pt-p10 {
+    padding-top: 10%;
+}
+
+.pt-p5 {
+    padding-top: 5%;
+}
+
+.p-1-2 { 
+    padding: 5px;
+}
+
+/* MARGIN */
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mh-p20 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* BORDER */
+
+.border-none {
+    border: none;
+}
