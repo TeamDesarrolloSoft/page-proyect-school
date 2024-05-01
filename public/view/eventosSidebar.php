@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 
-$fileCSS = ["eventosUser", "sidebar"];
+$fileCSS = ["sidebar", "eventosUser"];
 $fileJS = ["eventosUser", "sidebar"];
 
 require_once("./public/include/html_head.php");
@@ -13,6 +13,8 @@ require_once("./public/include/html_head.php");
     <?php require_once("./public/view/sidebar.php"); ?>
 
     <main>
+        <h1>Eventos</h1>
+        <hr>
         <div class="public_eventos_data">
 
         </div>

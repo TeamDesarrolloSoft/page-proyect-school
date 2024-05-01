@@ -6,20 +6,40 @@ const User2 = async () => {
 
     result.forEach(element => {
         console.log(element);
+
         const nuevoElemento = document.createElement('div');
         nuevoElemento.classList.add('contNoticiasDatos');
-        nuevoElemento.innerHTML = `
-        <div class="contNoticiasHijo" style="margin-top: 40px;">
-               <div class="contImgNoticas">
-                    <img src="./app/uploads/${element.imgEventoAdmin}">
-                </div>
+    
+        const tarjeta = document.createElement('div');
+        tarjeta.classList.add('contNoticiasHijo');
+        tarjeta.innerHTML = `
+          <div class="contImgNoticas">
+            <img src="./app/uploads/${element.imgEventoAdmin}">
+          </div>
+          <div class="contInformacionNoticias" style="padding: 10px; overflow-x: auto;">
+            <p>${element.fechaEventosAdmin}</p>
+            <p>${element.descripcionEventosAdmin}</p>
+          </div>
+        `;
 
-               <div class="contInformacionNoticias" style="padding: 10px; overflow-x: auto;">
-                  <p>${element.fechaEventosAdmin}</p>
-                    <p>${element.descripcionEventosAdmin}</p>
-                </div>
-        </div>`;
 
+        
+        //const nuevoElemento = document.createElement('div');
+        //nuevoElemento.classList.add('contNoticiasDatos');
+        //nuevoElemento.innerHTML = `
+        //<div class="contNoticiasHijo" style="margin-top: 40px;">
+        //       <div class="contImgNoticas">
+        //            <img src="./app/uploads/${element.imgEventoAdmin}">
+        //        </div>
+//
+        //       <div class="contInformacionNoticias" style="padding: 10px; overflow-x: auto;">
+        //          <p>${element.fechaEventosAdmin}</p>
+        //            <p>${element.descripcionEventosAdmin}</p>
+        //        </div>
+        //</div>`;
+//
+        //public_eventos_data.appendChild(nuevoElemento);
+        nuevoElemento.appendChild(tarjeta);
         public_eventos_data.appendChild(nuevoElemento);
     });
 }
