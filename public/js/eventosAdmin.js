@@ -31,15 +31,13 @@ const consulta = async () => {
 
     result.forEach(element => {
         const nuevoElemento = document.createElement('div');
-        nuevoElemento.classList.add('contenedorEventos');
-
+        nuevoElemento.classList.add('contNoticiasDatos');
         nuevoElemento.innerHTML = `
-        <div class="contNoticiasDatos" style="margin-top: 40px;"">
-            <div class="contNoticiasHijo">
+        <div class="contNoticiasHijo">
             <div class="contImgNoticas">
                 <img src="../../app/uploads/${element.imgEventoAdmin}">
             </div>
-        
+
             <div class="contInformacionNoticias" style="padding: 10px; overflow-x: auto;">
                 <p>${element.fechaEventosAdmin}</p>
                 <p>${element.descripcionEventosAdmin}</p>
@@ -53,9 +51,7 @@ const consulta = async () => {
                         <button class="eliminarBtn" data-action="Eliminar" style="border: none;">Eliminar</button>
                         <button class="editarBtn" data-action="Editar" style="border: none;">Editar</button>
                     </div>
-                    <div class="contPublicarBotonxd">
-                        <button>Subido</button>
-                    </div>
+
                 </div>
             </div>
         </div>`;

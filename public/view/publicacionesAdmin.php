@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 
-$fileCSS = ["publicacionesAdmin"];
+$fileCSS = ["publicacionesAdmin", "infoNoticiasSidebar"];
 $fileJS = ["publicacionesAdmin", "eventosAdmin"];
 
 
