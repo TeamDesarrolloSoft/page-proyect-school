@@ -5,7 +5,7 @@ const User2 = async () => {
     const result = await datos.json();
 
     result.forEach(element => {
-        console.log(element);
+        // console.log(element);
 
         const nuevoElemento = document.createElement('div');
         nuevoElemento.classList.add('contNoticiasDatos');

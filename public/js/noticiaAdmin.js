@@ -1,11 +1,11 @@
-const formNoticiaAdmin = document.querySelector("#formEventosAdmin");
+const formNoticiaAdmin = document.querySelector("#formNoticiaAdmin");
 const imgNoticiaAdmin = document.querySelector("#imgNoticiaAdmin")
 const descripcionNoticia = document.querySelector("#descripcionNoticia")
 const fechaNoticiaAdmin = document.querySelector("#fechaNoticiaAdmin")
 
 const public_noticias_data = document.querySelector(".public_noticias_data")
 
-formEventosAdmin.addEventListener("submit", (e) => {
+formNoticiaAdmin.addEventListener("submit", (e) => {
     e.preventDefault();
     obteniendoDatosNoticiasAdmin(imgNoticiaAdmin.files[0], descripcionNoticia, fechaNoticiaAdmin)
 
