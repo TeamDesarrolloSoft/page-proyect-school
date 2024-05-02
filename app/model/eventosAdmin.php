@@ -1,4 +1,6 @@
 <?php
+// require_once 'db.php'; // Asegúrate de incluir el archivo que contiene la clase Db
+
 class ModeleventosAdmin{
 
     public static function add($columns, $params, $values){
@@ -9,10 +11,9 @@ class ModeleventosAdmin{
             return $err;
         } 
 
-        return $res->affected_rows > 0;
+        return $res->rowCount() > 0; // Cambiado affected_rows a rowCount para PDO
         
     }
-
 
     public static function mostrarEventosAdmin(){
 
@@ -22,11 +23,8 @@ class ModeleventosAdmin{
             return [];
         } 
 
-        return $res->get_result()->fetch_all(MYSQLI_ASSOC);
-        
+        return $res->fetchAll(PDO::FETCH_ASSOC); // Cambiado get_result()->fetch_all(MYSQLI_ASSOC) a fetchAll(PDO::FETCH_ASSOC)
     }
-
-
     public static function eliminandoEventos($id){
 
         [ $err, $res ] =  Db::query("DELETE FROM eventosadmin where id = ?",[$id]); 
@@ -34,8 +32,7 @@ class ModeleventosAdmin{
         if($err) {
             return false;
         } 
-
-        return $res->affected_rows > 0;
+        return $res->rowCount() > 0; // Cambiado affected_rows a rowCount para PDO
         
     }
 }

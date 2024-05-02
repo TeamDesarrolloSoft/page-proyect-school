@@ -51,7 +51,7 @@ nav {
 
 section {
     padding: 20px 40px 10px;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 
@@ -79,7 +79,7 @@ section {
 }
 
 .right-half img {
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     object-fit: cover;
 }
@@ -94,7 +94,7 @@ section {
 .top-half {
     width: 100%;
     height: 50%;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 20px 200px;
     box-sizing: border-box;
     text-align: center;
@@ -146,14 +146,17 @@ section {
 .top-half, .bottom-half {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .top-half {
-    background-color: #f2f2f2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 250px;
 }
 
 .bottom-half {

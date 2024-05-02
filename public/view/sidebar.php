@@ -61,7 +61,7 @@
         <div class="modo-oscuro">
             <div class="switch">
                 <ion-icon name="log-in-outline"></ion-icon>
-                <a href="http://localhost/crudRoles">Cerrar sesion</a>
+                <a href="http://localhost/page-proyect-school">Cerrar sesion</a>
             </div>
         </div>
 

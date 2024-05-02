@@ -114,8 +114,8 @@ require_once("../includePublicacionesAdmin/html_head.php");
                         </div>
                     </div>
                 </div>
-
-                <div class="modal fade" id="EventoAdminModal" tabindex="-1" aria-labelledby="EventoAdminModal" aria-hidden="true">
+ 
+                <div class="modal fade" id="NoticiaAdmin" tabindex="-1" aria-labelledby="NoticiaAdmin" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -128,7 +128,7 @@ require_once("../includePublicacionesAdmin/html_head.php");
                                 <form id="formNoticiaAdmin">
 
                                     <div class="mb-3">
-                                        <label for="descripcionNoticia" class="form-label">Descripcion del Evento</label>
+                                        <label for="descripcionNoticia" class="form-label">Descripcion de la noticia</label>
                                         <input type="text" class="form-control" name="descripcionNoticia" id="descripcionNoticia">
                                     </div>
                                     <div class="mb-3">

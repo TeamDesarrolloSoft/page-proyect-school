@@ -5,7 +5,7 @@ const mostrandoNoticiasUser = async () => {
     const result = await datos.json();
 
     result.forEach(element => {
-        console.log(element);
+        // console.log(element);
 
         const nuevoElemento = document.createElement('div');
         nuevoElemento.classList.add('contNoticiasDatos');
@@ -14,11 +14,11 @@ const mostrandoNoticiasUser = async () => {
         tarjeta.classList.add('contNoticiasHijo');
         tarjeta.innerHTML = `
           <div class="contImgNoticas">
-            <img src="./app/uploads/${element.imgEventoAdmin}">
+            <img src="./app/uploads/${element.imgNoticiaAdmin}">
           </div>
           <div class="contInformacionNoticias" style="padding: 10px; overflow-x: auto;">
-            <p>${element.fechaEventosAdmin}</p>
-            <p>${element.descripcionEventosAdmin}</p>
+            <p>${element.FechaNoticiaAdmin}</p>
+            <p>${element.descripcionNoticiaAdmin}</p>
           </div>
         `;
         nuevoElemento.appendChild(tarjeta);
