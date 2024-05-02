@@ -11,25 +11,28 @@
     width: 50%;
     height: 90%;
     background-color: #E5E5E5;
-    padding-top: 10px;
+    padding: 20px;
 }
 
 
 
 
 .contenedorPublicaciones .contCabeceraPubli{ /*10*/
-    width: 100%;
+    width: calc(100% - 100px);
     height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    margin: 0 50px;
+
 }
 
 .contenedorPublicaciones .contPubliImg{/*30*/
     width: 100%;
     height: 30%;
+    margin-top: 40px;
 }
 
 .contenedorPublicaciones .contTextPubli{/*40*/
@@ -46,14 +49,35 @@
     justify-content: center;
 }
 
+.contCabeceraTitle {
+    height: 100%;
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.contCabeceraTitle > p{
+    width: 120px;
+}
+
+.img50{
+    width: 60px;
+}
+.contCabeceraDatos { 
+    width: calc(100% - 120px);
+    text-align: start;
+}
 /*Codificando*/
 
 .contenedorPublicaciones .contCabeceraPubli .imgPubliGa{
-    width: 15%;
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 
@@ -69,7 +93,7 @@
     y poner la imagen, si es que sale todo bien dejalo*/
     width: 80%;
     height: 100%;
-    margin: auto;
+    margin: 0 50px;
 }
 
 
@@ -85,8 +109,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    justify-content: start;
+    text-align: start;
+    padding: 40px 10px;
 }
 
 

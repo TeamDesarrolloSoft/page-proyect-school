@@ -22,6 +22,7 @@ require_once("../includePublicacionesAdmin/html_head.php");
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear publicacion</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EventoAdminModal" data-bs-whatever="@mdo">Crear Evento</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NoticiaAdmin" data-bs-whatever="@mdo">Crear Noticias</button>
+                <a href="../view/creacionUsersAdmins.php" class="btn btn-primary">Registrar Usuarios</a>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -157,31 +158,34 @@ require_once("../includePublicacionesAdmin/html_head.php");
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="publicData">
-
-                </div>
+        <div class="container text-center">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="publicData mb-4">
+                <h2>Publicaciones</h2>
+                <!-- Contenido de Public Data -->
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="public_eventos_data">
-
-                </div>
-
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="public_eventos_data mb-4">
+                <h2>Eventos</h2>
+                <!-- Contenido de Public Eventos Data -->
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-lg-10">
-                <div class="public_noticias_data">
-
-                </div>
-
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="public_noticias_data mb-4">
+                <h2>Noticias</h2>
+                <!-- Contenido de Public Noticias Data -->
             </div>
         </div>
+    </div>
+</div>
 
         
         <div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -242,7 +246,6 @@ require_once("../includePublicacionesAdmin/html_head.php");
                     </div>
                 </div>
     </div>  
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

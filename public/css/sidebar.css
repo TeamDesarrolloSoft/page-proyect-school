@@ -36,7 +36,7 @@ las variables en una clase y cambiarlo x su color opuesto*/
 
     --color-linea:rgb(90,90,90);
 
-    --color-switch-base :rgb(39,205,64);
+    --color-switch-base :#1C74BB;
     --color-switch-circulo:rgb(255,255,255);
 
     --color-scroll:rgb(68,69,74);
@@ -89,7 +89,7 @@ body{
     transition: width 0.5s ease, background-color 0.5s ease;
     overflow: hidden;
     position: fixed;
-    background-color: #E9EDC9;
+    background-color: #1C74BB;
     border-radius: 10px;
 }
 
@@ -170,7 +170,7 @@ el icono, el sidebar se achique"*/
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 50px;
     /* border: 2px solid black; */
 }
@@ -205,7 +205,7 @@ el icono, el sidebar se achique"*/
     align-items: center;
     text-decoration: none;
     border-radius: 10px;
-    /* color: var(--color-texto-menu); */
+    color: black;
 }
 
 .barra-lateral .navegacion ion-icon {
@@ -223,7 +223,7 @@ el icono, el sidebar se achique"*/
 .barra-lateral .linea{
     width: 100%;
     height: 3px;
-    background-color: var(--color-linea);
+    background-color: #1E293B;
 }
 
 
@@ -231,7 +231,7 @@ el icono, el sidebar se achique"*/
 
 .barra-lateral .modo-oscuro{
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -259,6 +259,11 @@ el icono, el sidebar se achique"*/
     height: 45px;
     cursor: pointer;
 }
+
+.barra-lateral .modo-oscuro .switch a{
+color: black;
+}
+
 .barra-lateral .modo-oscuro .base{
     position: relative;
     display: flex;

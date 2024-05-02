@@ -1,5 +1,5 @@
 .contNoticiasDatos {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     display: flex;
     flex-wrap: wrap; /* Esto permitirá que las cartas se organicen horizontalmente */
@@ -37,4 +37,12 @@
 
 .contNoticiasDatos .contNoticiasHijo .contInformacionNoticias p {
     margin-top: 4px;
+}
+
+.public_eventos_data{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
 }

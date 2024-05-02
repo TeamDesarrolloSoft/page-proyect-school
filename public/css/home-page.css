@@ -227,7 +227,7 @@ input[type="email"] {
     color: #fff;
 }
 
-button {
+.ff {
     padding: 10px 20px;
     font-size: 1em;
     background-color: #1C74BB;
@@ -237,8 +237,16 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #15547C;
+.menssage-button {
+    background-color: #1C74BB;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menssage-button:hover {
+    background-color: rgb(67, 93, 134);
 }
 
 

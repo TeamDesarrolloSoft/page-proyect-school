@@ -11,13 +11,18 @@ const consultaUser = async () => {
         <div class="contenedorHijoPubli">
             <div class="contCabeceraPubli">
                 <div class="imgPubliGa">
-                    <img src="./public/img/person.png" alt="">
+                    <div class="img50">
+                        <img src="./public/img/person.png" alt="">
+                    </div>
                 </div>
-                <div class="contCabeceraDatos">
-                    <h3>${element.nombrePublicacionAdmin}</h3> 
-                    <span>${element.rolPublicacionAdmin}l</span>
+                <div class="contCabeceraTitle">
+                    <div class="contCabeceraDatos">
+                        <h3>${element.nombrePublicacionAdmin}</h3> 
+                        <span>${element.rolPublicacionAdmin}l</span>
+                    </div>
+                    <p>${element.fechaPublicacionAdmin}</p>
                 </div>
-                <p>${element.fechaPublicacionAdmin}</p>
+                    
             </div>
 
             <div class="contPubliImg">

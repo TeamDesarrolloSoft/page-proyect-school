@@ -1,51 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-html,body{
-    display: grid;
-    height: 100%;
-    place-items: center;
-}
 
-::selection{
-    color: #fff;
-    background: #9cfd74;
-}
-
-::-webkit-scrollbar{
-    width: 3px;
-    border-radius: 25px;
-}
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb{
-    background: #ddd;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #ccc;
-}
 #toggleButton {
     position: fixed;
-    z-index: 9999; /* Ajustado para que esté por encima de los demás elementos */
-    bottom: 20px; /* Puedes ajustar esto según la posición deseada */
-    right: 20px; /* Puedes ajustar esto según la posición deseada */
+    z-index: 9999; 
+    bottom: 2vh; 
+    right: 1vw; 
     padding: 0 3px;
     font-size: 2.5em;
     border-radius: 30%;
     background-color: #E9EDC9;
-    border-color: #9cfd74;
+    border-color: #1C74BB;
     color: #d3a373;
 }
 #burbuja {
     position: fixed; 
-    z-index: 9999; /* Ajustado para que esté por encima de los demás elementos */
-    bottom: 40vh; /* Puedes ajustar esto según la posición deseada */
-    right: 20vw; /* Puedes ajustar esto según la posición deseada */
+    z-index: 9999; 
+    bottom: 50vh; 
+    right: 20vw; 
     width: 200px;
     height: 200px;
     margin: 20px;
@@ -59,13 +29,13 @@ html,body{
     border-top: 0px;
 }
 .wrapper .title{
-    background: #9cfd74;
+    background: #1C74BB;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
     text-align: center;
-    border-bottom: 1px solid #9cfd74;
+    border-bottom: 1px solid #1C74BB;
     border-radius: 5px 5px 0 0;
 }
 .wrapper .form{
@@ -91,7 +61,7 @@ html,body{
     line-height: 40px;
     border-radius: 50%;
     font-size: 18px;
-    background: #9cfd74;
+    background: #1C74BB;
 }
 .wrapper .form .inbox .msg-header{
     max-width: 53%;
@@ -99,7 +69,7 @@ html,body{
 }
 .form .inbox .msg-header p{
     color: #fff;
-    background: #9cfd74;
+    background: #1C74BB;
     border-radius: 10px;
     padding: 8px 10px;
     font-size: 14px;
@@ -129,7 +99,6 @@ html,body{
     width: 100%;
     outline: none;
     border: 1px solid transparent;
-    padding: 0 80px 0 15px;
     border-radius: 3px;
     font-size: 15px;
     background: #fff;
@@ -158,15 +127,16 @@ html,body{
     opacity: 0;
     pointer-events: none;
     border-radius: 3px;
-    background: #9cfd74;
-    border: 1px solid #9cfd74;
+    background: #1C74BB;
+    border: 1px solid #1C74BB;
     transform: translateY(-50%);
     transition: all 0.3s ease;
+    padding: 0;
 }
 .wrapper .typing-field .input-data input:valid ~ button{
     opacity: 1;
     pointer-events: auto;
 }
 .typing-field .input-data button:hover{
-    background: #9cfd74;
+    background: #1C74BB;
 }
