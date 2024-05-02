@@ -133,6 +133,17 @@ require_once("../includePublicacionesAdmin/html_head.php");
 
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="contNoticiasDatos">
+
+                </div>
+
+            </div>
+        </div>
+
+        
     </div>
 
 
