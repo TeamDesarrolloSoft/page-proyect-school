@@ -1,11 +1,8 @@
 <?php
+// conectando a la base de datos
+$conn = mysqli_connect("localhost", "root", "", "chatbot") or die("Database Error");
 
-    require_once '../../config/db.php';
-    require_once '../db/db.php';
-
-    $conn = Db::conexion();
-
-    // obteniendo el mensaje del usuario a través de ajax
+// obteniendo el mensaje del usuario a través de ajax
 $getMesg = mysqli_real_escape_string($conn, $_POST['text']);
 
 //comprobando la consulta del usuario a la consulta de la base de datos
