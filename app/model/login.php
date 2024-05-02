@@ -10,7 +10,7 @@ class ModelLogin{
             return $err;
         } 
 
-        return $res->affected_rows > 0;
+        return $res->rowCount() > 0; // Cambiado affected_rows a rowCount para PDO
         
     }
 
@@ -23,9 +23,7 @@ class ModelLogin{
         if($err) {
             return false;
         } 
-        return $res->get_result()->fetch_assoc();
+        return $res->fetch(PDO::FETCH_ASSOC); // Cambiado get_result()->fetch_assoc() a fetch(PDO::FETCH_ASSOC)
         
     }
-
-
 }

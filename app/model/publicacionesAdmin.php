@@ -1,4 +1,5 @@
 <?php
+
 class ModelpublicacionesAdmin{
 
     public static function add($columns, $params, $values){
@@ -9,7 +10,7 @@ class ModelpublicacionesAdmin{
             return $err;
         } 
 
-        return $res->affected_rows > 0;
+        return $res->rowCount() > 0; // Cambiado affected_rows a rowCount para PDO
         
     }
 
@@ -22,7 +23,7 @@ class ModelpublicacionesAdmin{
             return [];
         } 
 
-        return $res->get_result()->fetch_all(MYSQLI_ASSOC);
+        return $res->fetchAll(PDO::FETCH_ASSOC); // Cambiado get_result()->fetch_all(MYSQLI_ASSOC) a fetchAll(PDO::FETCH_ASSOC)
         
     }
 
@@ -35,7 +36,7 @@ class ModelpublicacionesAdmin{
             return false;
         } 
 
-        return $res->affected_rows > 0;
+        return $res->rowCount() > 0; // Cambiado affected_rows a rowCount para PDO
         
     }
 }
