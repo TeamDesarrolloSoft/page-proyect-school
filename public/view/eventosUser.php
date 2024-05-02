@@ -15,6 +15,7 @@ require_once ("./public/include/html_head.php");
     <main>
 
 
+        </div>
     </main>
 
 

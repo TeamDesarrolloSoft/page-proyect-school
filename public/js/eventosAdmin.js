@@ -2,6 +2,7 @@ const formEventosAdmin = document.querySelector("#formEventosAdmin");
 const imgEventosAdmin = document.querySelector("#imgEventoAdmin")
 const descripcionEventosAdmin = document.querySelector("#descripcionEventosAdmin")
 const fechaEventosAdmin = document.querySelector("#fechaEventosAdmin")
+
 const public_eventos_data = document.querySelector(".public_eventos_data")
 
 formEventosAdmin.addEventListener("submit", (e) => {
@@ -42,19 +43,15 @@ const consulta = async () => {
                 <p>${element.fechaEventosAdmin}</p>
                 <p>${element.descripcionEventosAdmin}</p>
             </div>
-        </div>
-
-
             <div class="contFooterPubli">
                 <div class="contFooterPubliIconsData">
                     <div class="contFooterPubliIcons" data-id=${element.id}>
                         <button class="eliminarBtn" data-action="Eliminar" style="border: none;">Eliminar</button>
                         <button class="editarBtn" data-action="Editar" style="border: none;">Editar</button>
                     </div>
-
                 </div>
             </div>
-        </div>`;
+        </div> `;
 
         public_eventos_data.appendChild(nuevoElemento);
 
@@ -64,4 +61,23 @@ const consulta = async () => {
         });
     });
 }
+function eliminarEvento(element) {
+    if (element) {
+        const button = element.closest('button');
+        const id = button.parentNode.getAttribute('data-id');
+        const action = button.getAttribute('data-action');
+
+        if (action === "Eliminar") {
+            const contenedor = button.closest('.contNoticiasDatos');
+            contenedor.remove();
+            console.log("El evento se eliminó, su ID es: " + id);
+
+            fetch(`../../app/trigger/eventosAdmin.php?action=DELETE&id=${id}`)
+                .then(res => res.json())
+                .then(console.log)
+                .catch(err => console.log(err))
+        }
+    }
+}
+
 consulta();
