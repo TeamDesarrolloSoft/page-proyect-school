@@ -3,7 +3,7 @@
 <?php
 
 $fileCSS = ["publicacionesAdmin", "eventosAdmin"];
-$fileJS = ["publicacionesAdmin", "eventosAdmin"];
+$fileJS = ["publicacionesAdmin", "eventosAdmin", "noticiaAdmin"];
 
 
 
@@ -21,6 +21,7 @@ require_once("../includePublicacionesAdmin/html_head.php");
             <div class="col-lg-10">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear publicacion</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EventoAdminModal" data-bs-whatever="@mdo">Crear Evento</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NoticiaAdmin" data-bs-whatever="@mdo">Crear Noticias</button>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -114,6 +115,45 @@ require_once("../includePublicacionesAdmin/html_head.php");
                     </div>
                 </div>
 
+                <div class="modal fade" id="EventoAdminModal" tabindex="-1" aria-labelledby="EventoAdminModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="">Completar para publicar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+
+                            <div class="modal-body">
+                                <form id="formNoticiaAdmin">
+
+                                    <div class="mb-3">
+                                        <label for="descripcionNoticia" class="form-label">Descripcion del Evento</label>
+                                        <input type="text" class="form-control" name="descripcionNoticia" id="descripcionNoticia">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="fechaNoticiaAdmin" class="form-label">Fecha</label>
+                                        <input type="date" class="form-control" name="fechaNoticiaAdmin" id="fechaNoticiaAdmin">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="imgNoticiaAdmin" class="form-label">Imagen noticia</label>
+                                        <input type="file" name="imgNoticiaAdmin" id="imgNoticiaAdmin" required>
+                                    </div>
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" data-bs-dismiss="modal" id="cacca" class="btn btn-primary">Publicar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -136,7 +176,7 @@ require_once("../includePublicacionesAdmin/html_head.php");
 
         <div class="row">
             <div class="col-lg-10">
-                <div class="contNoticiasDatos">
+                <div class="public_noticias_data">
 
                 </div>
 
