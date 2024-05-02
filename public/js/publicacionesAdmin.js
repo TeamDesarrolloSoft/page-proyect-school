@@ -93,10 +93,80 @@ const consulta = async () => {
 
         const contenedorPublicaciones = nuevoElemento.querySelector(".contFooterPubliIcons");
         contenedorPublicaciones.addEventListener("click", (e) => {
-            eliminarPublicacion(e.target);
-        });
+            const target = e.target;
+            if (target.classList.contains('editarBtn')) {
+                EditarPublicacion(element);
+            } else if (target.classList.contains('eliminarBtn')) {
+                eliminarPublicacion(e.target);
+
+            }
+        });        
     });
 }
+
+function EditarPublicacion(element) {
+    if (element) {
+        const nombre = element.nombrePublicacionAdmin;
+        const rol = element.rolPublicacionAdmin;
+        const fecha = element.fechaPublicacionAdmin;
+        const titulo = element.tituloPublicacionAdmin;
+        const descripcion = element.descripcionPublicacionAdmin;
+        const imagen = element.imgPublicacionAdmin; 
+        const id = element.id;
+
+        document.getElementById('nombrePublicacionAdminEdit').value = nombre;
+        document.getElementById('rolPublicacionAdminEdit').value = rol;
+        document.getElementById('fechaPublicacionAdminEdit').value = fecha;
+        document.getElementById('tituloPublicacionAdminEdit').value = titulo;
+        document.getElementById('descripcionPublicacionAdminEdit').value = descripcion;
+        document.getElementById('imgUrlPublicacionAdminEdit').value = imagen;
+        
+        $('#exampleModalEdit').modal('show');
+    }
+}
+
+const formPublicacionesAdminEdit = document.querySelector("#formPublicacionesAdmin");
+
+document.addEventListener("DOMContentLoaded", function() {
+    const btnEditar = document.getElementById('btnEditar');
+    const button = element.closest('btnEditar');
+    btnEditar.addEventListener('click', function() {
+        const nombrePublicacionAdminEdit = document.querySelector("#nombrePublicacionAdminEdit").value;
+        const rolPublicacionAdminEdit = document.querySelector("#rolPublicacionAdminEdit").value;
+        const fechaPublicacionAdminEdit = document.querySelector("#fechaPublicacionAdminEdit").value;
+        const tituloPublicacionAdminEdit = document.querySelector("#tituloPublicacionAdminEdit").value;
+        const imgPublicacionAdminEdit = document.querySelector("#imgUrlPublicacionAdminEdit").value;
+        const descripcionPublicacionAdminEdit = document.querySelector("#descripcionPublicacionAdminEdit").value;
+        const cod_id = id
+        editarFuncion(nombrePublicacionAdminEdit, rolPublicacionAdminEdit, fechaPublicacionAdminEdit, tituloPublicacionAdminEdit,
+            imgPublicacionAdminEdit, descripcionPublicacionAdminEdit, id);
+    });
+});
+
+function editarFuncion(nombrePublicacionAdminEdit, rolPublicacionAdminEdit, fechaPublicacionAdminEdit, tituloPublicacionAdminEdit,
+    imgPublicacionAdminEdit, descripcionPublicacionAdminEdit, id) {
+    const formDatos = new FormData();
+    formDatos.append("nombrePublicacionAdminEdit", nombrePublicacionAdminEdit);
+    formDatos.append("rolPublicacionAdminEdit", rolPublicacionAdminEdit);
+    formDatos.append("fechaPublicacionAdminEdit", fechaPublicacionAdminEdit);
+    formDatos.append("tituloPublicacionAdminEdit", tituloPublicacionAdminEdit);
+    formDatos.append("imgUrlPublicacionAdminEdit", imgPublicacionAdminEdit);
+    formDatos.append("descripcionPublicacionAdminEdit", descripcionPublicacionAdminEdit);
+    formDatos.append("id", id);
+
+    fetch(`../../app/trigger/publicacionesAdmin.php?action=UPDATE&id=${id}`, {
+        method: 'POST',
+        body: formDatos
+    })
+    .then(res => res.json())
+    .then(response => {
+        console.log(response);
+    })
+    .catch(err => console.log(err));
+}
+
+    
+
 
 function eliminarPublicacion(element) {
     if (element) {

@@ -33,6 +33,8 @@
         echo json_encode(ControllerpublicacionesAdmin::mostrarPublicacionesAdmin());
     }else if($action == "DELETE"){
         echo json_encode(ControllerpublicacionesAdmin::eliminandoPublicacion());
+    }else if ($action == "UPDATE"){
+        echo json_encode(ControllerpublicacionesAdmin::EditarPubliciones());
     }
 
 
