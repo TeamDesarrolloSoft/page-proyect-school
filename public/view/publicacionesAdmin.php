@@ -184,9 +184,67 @@ require_once("../includePublicacionesAdmin/html_head.php");
         </div>
 
         
-    </div>
+        <div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="">Editar para publicar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="formPublicacionesAdminEdit">
 
+                                    <div class="mb-3">
+                                        <label for="nombre" class="col-form-label">Nombre</label>
+                                        <input type="text" class="form-control" name="nombrePublicacionAdminEdit" id="nombrePublicacionAdminEdit">
+                                    </div>
 
+                                    <div class="mb-3">
+                                        <label for="rolAdmin" class="form-label">Rol Admin</label>
+                                        <input type="text" class="form-control" name="rolPublicacionAdminEdit" id="rolPublicacionAdminEdit">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="fecha" class="form-label">Fecha</label>
+                                        <input type="date" class="form-control" name="fechaPublicacionAdminEdit" id="fechaPublicacionAdminEdit">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="tituloPubli" class="form-label">Titulo publicacion</label>
+                                        <input type="text" class="form-control" name="tituloPublicacionAdminEdit" id="tituloPublicacionAdminEdit">
+                                    </div> 
+                                    <div class="mb-3">
+                                        <label for="imgPublicacionAdminEdit" class="form-label">Imagen de la publicación</label>
+                                        <input type="text" class="form-control mt-2" name="imgUrlPublicacionAdminEdit" id="imgUrlPublicacionAdminEdit" placeholder="URL de la imagen"><br>
+                                        <div class="input-group">
+                                            <input type="file" style="display: none;" name="imgPublicacionAdminEdit" id="imgPublicacionAdminEdit">
+                                            <input type="text" class="form-control" placeholder="Seleccionar imagen" readonly>
+                                            <button type="button" class="btn btn-secondary" onclick="document.getElementById('imgPublicacionAdminEdit').click()">Seleccionar</button>
+                                        </div>
+                                        
+                                    </div>
+
+                                    
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="descripcionPublicacionAdmin" name="descripcionPublicacionAdminEdit" id="descripcionPublicacionAdminEdit"></textarea>
+                                        <label for="descripcion">Descripcion</label>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button"  data-action="Editar" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" id="btnEditar" class="btn btn-primary">Editar</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </div>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

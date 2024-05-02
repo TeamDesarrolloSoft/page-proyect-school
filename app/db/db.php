@@ -1,7 +1,6 @@
 <?php
     
     class Db {
-        
         private static $instancia = false;
         private static $conexion = null;
 
