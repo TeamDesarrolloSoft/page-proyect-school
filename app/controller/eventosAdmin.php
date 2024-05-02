@@ -1,15 +1,15 @@
 <?php
-class ControllerpublicacionesAdmin{
+class ControllereventosAdmin{
     public static function add(){
         // Obtener datos enviados por POST
         $postData = $_POST;
         $fileData = $_FILES;
 
         // Obtener el nombre del archivo
-        $fileName = $fileData['imgPublicacionAdmin']['name']; //cambiar el img por el nombre de ecentos
+        $fileName = $fileData['imgEventoAdmin']['name']; //cambiar el img por el nombre de ecentos
 
         // Agregar el nombre del archivo al array de datos
-        $postData['imgPublicacionAdmin'] = $fileName; //cambiar el img por evento
+        $postData['imgEventoAdmin'] = $fileName; //cambiar el img por evento
 
         // Obtener columnas y parámetros
         $columns = implode(', ', array_keys($postData));
@@ -19,18 +19,18 @@ class ControllerpublicacionesAdmin{
         $values = array_values($postData);
 
         // Llamar al método add del modelo
-        return ModelpublicacionesAdmin::add($columns, $params, $values); 
+        return ModeleventosAdmin::add($columns,$params,$values);
     }
 
 
 
-    public static function mostrarPublicacionesAdmin(){
-        return ModelpublicacionesAdmin::mostrarPublicacionesAdmin();
+    public static function mostrarEventosAdmin(){
+        return ModeleventosAdmin::mostrarEventosAdmin();
     }
 
-    public static function eliminandoPublicacion(){
+    public static function eliminandoEventos(){
        $id = isset($_GET['id']) ? $_GET['id'] : null;
-       return ModelpublicacionesAdmin::eliminandoPublicacion($id);
+       return ModeleventosAdmin::eliminandoEventos($id);
     }
 
 }

@@ -117,5 +117,6 @@ function eliminarPublicacion(element) {
     }
 }
 
+
 consulta();
 
