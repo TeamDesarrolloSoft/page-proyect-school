@@ -23,6 +23,7 @@ function obteniendoDatosNoticiasAdmin(imgEventoAdmin, descripcionEventosAdmin, f
         .then(res => res.json())
         .then(console.log)
         .catch(err => console.log(err))
+        
 }
 
 

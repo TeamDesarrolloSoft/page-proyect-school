@@ -21,8 +21,16 @@ function obteniendoDatosEventosAdmin(imgEventoAdmin, descripcionEventosAdmin, fe
         body: formDatosEventos
     })
         .then(res => res.json())
-        .then(console.log)
-        .catch(err => console.log(err))
+        .then(response => {
+            if(response){
+                alert("Eventos publicados correctamente");
+                window.location.reload();
+            }
+        })
+        .catch(err => console.log(err)) 
+
+
+
 
 
 }
