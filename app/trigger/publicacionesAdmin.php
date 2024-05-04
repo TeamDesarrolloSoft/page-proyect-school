@@ -13,7 +13,7 @@
         $fileTmpName = $file['tmp_name'];
     
         // Directorio donde se guardara los archivos
-        $uploadDirectory = 'C:\xampp\htdocs\page-proyect-school\app\uploads\\';
+        $uploadDirectory = '/opt/lampp/htdocs/app/uploads/';
 
         // Mueve el archivo al directorio de destino
         $destination = $uploadDirectory . $fileName;
@@ -31,7 +31,7 @@
     }else if($action == "DELETE"){
         echo json_encode(ControllerpublicacionesAdmin::eliminandoPublicacion());
     }else if ($action == "UPDATE"){
-        echo json_encode(ControllerpublicacionesAdmin::EditarPubliciones());
+        echo json_encode(ControllerpublicacionesAdmin::EditarPublicaciones());
     }
 
 
