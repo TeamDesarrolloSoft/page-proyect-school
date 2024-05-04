@@ -177,7 +177,7 @@ require_once("../includePublicacionesAdmin/html_head.php");
                     </div>
                 </div>
 
-                <div class="row ">
+                <div class="row ocultar">
                     <div class="col-lg-10 mx-auto">
                         <div class="public_noticias_data mb-4">
                             <h2>Noticias</h2>
