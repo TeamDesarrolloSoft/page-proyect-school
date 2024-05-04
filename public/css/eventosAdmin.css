@@ -39,3 +39,6 @@
 .contNoticiasDatos .contNoticiasHijo .contInformacionNoticias p {
     margin-top: 4px;
 }
+.ocultar {
+    display: none;
+}

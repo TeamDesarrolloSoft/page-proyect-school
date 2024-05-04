@@ -18,8 +18,8 @@ require_once("../includePublicacionesAdmin/html_head.php");
         <div class="container">
             <div class="row">
                 <div class="col-lg-10">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear publicacion</button>
-                    <button type="button" class="btn btn-primary ocultar" data-bs-toggle="modal" data-bs-target="#EventoAdminModal" data-bs-whatever="@mdo">Crear Evento</button>
+                    <button type="button" class="btn btn-primary ocultar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear publicacion</button>
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#EventoAdminModal" data-bs-whatever="@mdo">Crear Evento</button>
                     <button type="button" class="btn btn-primary ocultar" data-bs-toggle="modal" data-bs-target="#NoticiaAdmin" data-bs-whatever="@mdo">Crear Noticias</button>
                     <a href="../view/creacionUsersAdmins.php" class="btn btn-primary ocultar">Registrar Usuarios</a>
 
@@ -157,7 +157,7 @@ require_once("../includePublicacionesAdmin/html_head.php");
             </div>
 
             <div class="container text-center">
-                <div class="row">
+                <div class="row ocultar">
                     <div class="col-lg-10 mx-auto">
                         <div class="publicData mb-4">
                             <h2>Publicaciones</h2>
@@ -167,7 +167,7 @@ require_once("../includePublicacionesAdmin/html_head.php");
                     </div>
                 </div>
 
-                <div class="row ocultar">
+                <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <div class="public_eventos_data mb-4">
                             <h2>Eventos</h2>
@@ -177,8 +177,8 @@ require_once("../includePublicacionesAdmin/html_head.php");
                     </div>
                 </div>
 
-                <div class="row ">
-                    <div class="col-lg-10 mx-auto">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto ocultar">
                         <div class="public_noticias_data mb-4">
                             <h2>Noticias</h2>
                             <hr>

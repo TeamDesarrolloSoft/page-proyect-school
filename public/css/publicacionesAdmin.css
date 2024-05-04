@@ -118,3 +118,7 @@
     border: none;
     padding: 15px 20px;
 }
+
+.ocultar {
+    display: none;
+}
